@@ -13,7 +13,7 @@
 	<artifactId>mudi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>mudi</name>
-	<description>Projeto Spring MVC da Alura</description>
+	<description>Projeto Spring MVC</description>
 
 	<properties>
 		<java.version>1.8</java.version>
