@@ -1,5 +1,4 @@
 package br.com.alura.mvc.mudi.dto;
-
 import javax.validation.constraints.NotBlank;
 
 import br.com.alura.mvc.mudi.model.Pedido;
@@ -7,16 +6,16 @@ import br.com.alura.mvc.mudi.model.StatusPedido;
 
 public class RequisicaoNovoPedido {
 
-	@NotBlank //NotBlank.requisicaoNovoPedido.nomeProduto=não pode estar em branco
+	@NotBlank
 	private String nomeProduto;
-	
+
 	@NotBlank
 	private String urlProduto;
-	
+
 	@NotBlank
 	private String urlImagem;
 	private String descricao;
-	
+
 	public String getNomeProduto() {
 		return nomeProduto;
 	}
@@ -41,6 +40,7 @@ public class RequisicaoNovoPedido {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
+
 	public Pedido toPedido() {
 		Pedido pedido = new Pedido();
 		pedido.setDescricao(descricao);
@@ -50,6 +50,6 @@ public class RequisicaoNovoPedido {
 		pedido.setStatus(StatusPedido.AGUARDANDO);
 		return pedido;
 	}
-	
-	
+
+
 }
